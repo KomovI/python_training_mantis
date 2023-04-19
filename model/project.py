@@ -10,7 +10,7 @@ class Project:
         self.project_id = project_id
 
     def __repr__(self):
-        return "%s:%s:%s:%s" % (self.project_name, self.status, self.view_status, self.description)
+        return "%s:%s:%s:%s" % (self.project_name, self.project_id, self.view_status, self.description)
 
     def __eq__(self, other):
         return (self.project_id is None or other.project_id is None or self.project_id == other.project_id) and \
